@@ -1,10 +1,10 @@
 identity:
-  name: "word2md"
+  name: "word2markdown"
   author: "cheng"
   label:
-    en_US: "word2md"
-    zh_Hans: "word2md"
-    pt_BR: "word2md"
+    en_US: "word2markdown"
+    zh_Hans: "word2markdown"
+    pt_BR: "word2markdown"
 description:
   human:
     en_US: "word to markdown"
@@ -40,4 +40,4 @@ parameters:
     form: llm
 extra:
   python:
-    source: tools/word2md.py
+    source: tools/word2markdown.py

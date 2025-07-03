@@ -7,7 +7,7 @@ from dify_plugin import Tool
 from dify_plugin.entities.tool import ToolInvokeMessage
 
 
-class Word2mdTool(Tool):
+class word2markdownTool(Tool):
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
         query = tool_parameters.get('query')
         file = tool_parameters.get('file')
@@ -19,7 +19,7 @@ class Word2mdTool(Tool):
             with open("document.docx", 'wb') as file:
                 file.write(response.content)
 
-            md = self.covert_word2md("document.docx", query)
+            md = self.covert_word2markdown("document.docx", query)
             yield self.create_text_message(md)
         except Exception as e:
             yield self.create_text_message(f"error {str(e)} file_url:{file.url}")
@@ -57,7 +57,7 @@ class Word2mdTool(Tool):
 
         return '\n'.join(markdown) + '\n'
 
-    def covert_word2md(self, file_path, title_prefix):
+    def covert_word2markdown(self, file_path, title_prefix):
         doc = docx.Document(file_path)
         markdown_text = ''
 

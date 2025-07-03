@@ -1,4 +1,4 @@
-## word2md
+## word2markdown
 
 **Author:** cheng
 **Version:** 0.0.1

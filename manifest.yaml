@@ -1,12 +1,12 @@
 version: 0.0.1
 type: plugin
 author: cheng
-name: word2md
+name: word2markdown
 label:
-  en_US: word2md
-  ja_JP: word2md
-  zh_Hans: word2md
-  pt_BR: word2md
+  en_US: word2markdown
+  ja_JP: word2markdown
+  zh_Hans: word2markdown
+  pt_BR: word2markdown
 description:
   en_US: word to markdown
   ja_JP: word to markdown
@@ -20,7 +20,7 @@ resource:
       enabled: true
 plugins:
   tools:
-    - provider/word2md.yaml
+    - provider/word2markdown.yaml
 meta:
   version: 0.0.1
   arch:
